@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Magic Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1 id="typingText"></h1>
+<button id="themeToggle">Toggle Theme</button>
+
+<section class="gallery">
+    <img id="mainImage" src="images/elf.jpg" alt="Gallery">
+    <div class="thumbnails">
+    <img src="images/portal.jpeg" alt="a magical portal" data-img>
+    <img src="images/levitate.jpg" alt="man levitating" data-img>
+    <img src="images/elfstanding.jpg" alt="elf standing" data-img>
+
+    </div>
+</section>
+
+<section class="tabs">
+    <div class="tab-buttons">
+    <button data-tab="1">Magic Info</button>
+    <button data-tab="2">Secrets</button>
+    <button data-tab="3">History</button>
+    </div>
+    <div id="tabContent"></div>
+</section>
+
+<section class="form-section">
+    <form id="portalForm">
+    <input type="text" id="username" placeholder="Your name" required>
+    <input type="email" id="email" placeholder="Email of Destiny" required>
+    <input type="password" id="password" placeholder="Your Secret Code" required>
+    <button type="submit">Enter Portal</button>
+    <div id="formFeedback"></div>
+    </form>
+</section>
+</div>
+
+<div id="easterEgg" class="hidden">🧙 You discovered the secret of the portal!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
